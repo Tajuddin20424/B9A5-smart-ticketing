@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-Ticket</title>
+
+    <!-- daisy UI and Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/tailwind.config.js">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-gray-800">P-Ticket</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900 font-medium">Home</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900 font-medium">About</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900 font-medium">Destination</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900 font-medium">Search</a></li>
+                </ul>
+            </nav>
+            <button class="bg-green-500 text-white px-4 py-2 rounded-md shadow-md hover:bg-green-600">
+                Bus <img src="images/bus-icon.png" alt="">
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main id="img" class="bg-cover bg-center" style="background-image: url('images/banner.png');">
+        <div class="container mx-auto px-4 py-24 text-center text-white">
+            <h2 class="text-4xl font-bold">End-to-End Travel with <span class="text-green-400"><br>MT Paribahan</span>
+            </h2>
+            <p class="mt-4 text-lg">
+                Yes, you can run unit tests and view the results directly within the app. The <br>integrated testing
+                features allow for a streamlined .
+            </p>
+            <button
+                class="mt-6 bg-green-500 px-6 py-3 rounded-md shadow-md text-black text-lg font-semibold hover:bg-green-600">
+                Buy Tickets
+            </button>
+        </div>
+    </main>
+
+    <!-- Stats Section -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+            <div>
+                <h3 class="text-3xl font-bold text-green-500">500K+</h3>
+                <p class="text-gray-600 mt-2">Registered users</p>
+                <img src="images/people.png" alt="">
+            </div>
+
+            <!-- <div style="display: flex; align-items: center; gap: 10px;">
+                <h3 class="text-3xl font-bold text-green-500">500K+</h3>
+                <p class="text-gray-600 mt-2">Registered users</p>
+                <img src="images/people.png" alt="" style="height: 40px; width: auto;">
+            </div> -->
+
+            <div>
+                <h3 class="text-3xl font-bold text-green-500">1.7 lacs</h3>
+                <p class="text-gray-600 mt-2">Tickets sold</p>
+                <img src="images/ticket-cupon.png" alt="">
+            </div>
+            <div>
+                <h3 class="text-3xl font-bold text-green-500">80K+</h3>
+                <p class="text-gray-600 mt-2">Rental partners</p>
+                <img src="images/stoppage.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Offers Section -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-bold text-gray-800">Best offers for you</h2>
+            <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <!-- Offer Card 1 -->
+                <div class="bg-white border border-gray-200 rounded-md shadow-md p-6">
+                    <h3 class="text-2xl font-bold text-yellow-500">15% OFF</h3>
+                    <p class="text-gray-600 mt-2">on your next purchase</p>
+                    <p class="mt-4 font-semibold text-gray-700">Coupon Code: <span class="font-bold">NEW15</span></p>
+                    <p class="text-gray-500 mt-1">use by January 2024</p>
+                </div>
+                <!-- Offer Card 2 -->
+                <div class="bg-white border border-gray-200 rounded-md shadow-md p-6">
+                    <h3 class="text-2xl font-bold text-pink-500">20% OFF</h3>
+                    <p class="text-gray-600 mt-2">on your next purchase</p>
+                    <p class="mt-4 font-semibold text-gray-700">Coupon Code: <span class="font-bold">Couple20</span></p>
+                    <p class="text-gray-500 mt-1">use by January 2024</p>
+                </div>
+            </div>
+            <button
+                class="mt-8 bg-green-500 px-6 py-3 rounded-md text-white font-semibold shadow-md hover:bg-green-600">
+                See All Offers
+            </button>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="header">
+                M.T Paribahan
+            </div>
+            <div class="ticket">
+                <div class="ticket-header">
+                    <h2>Greenline Paribahan</h2>
+                    <div class="seats-left">40 Seats left</div>
+                </div>
+                <div class="ticket-details">
+                    <div><strong>Route:</strong> Dhaka - Sylhet</div>
+                    <div><strong>Departure Time:</strong> 9:00 PM</div>
+                    <div><strong>Boarding Point:</strong> Laxmipur</div>
+                    <div><strong>Dropping Point:</strong> Bogura</div>
+                    <div><strong>Est. Time:</strong> 11 Hours</div>
+                </div>
+            </div>
+            <div class="price-section">
+                <div class="price">550 Taka <span class="tag">Per Seat</span></div>
+            </div>
+        </div>
+
+    </section>
+
+
+</body>
+
+
+
+<!-- <footer>
+    <div>
+        <h1>P-Ticket</h1>
+        <p>P-Ticket is a digital platform to make your daily commuting better.</p>
+    </div>
+
+</footer> -->
+
+
+<script src="scripts/P-Ticket.js"></script>
+</body>
+
+</html>
